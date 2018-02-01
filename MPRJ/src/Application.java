@@ -64,8 +64,9 @@ public class Application {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             dbf.setNamespaceAware(false);
             DocumentBuilder docBuilder = dbf.newDocumentBuilder();
-            Document index = docBuilder.parse(new File("index.xml"));
+            Document index = docBuilder.parse(new File("index.html"));
                 Element element = index.getDocumentElement();
+                element.getTagName().replaceAll("<link href='http://www.tjrj.jus.br/importacao-portal/css' type='text/css' rel='stylesheet'>", "<link href='http://www.tjrj.jus.br/importacao-portal/css' type='text/css' rel='stylesheet'></link>");
                 //NodeList node = element.getElementsByTagName("link").
 
             //Element form = (Element) index.getElementById("form");
