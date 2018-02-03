@@ -1,163 +1,98 @@
-import org.jsoup.Jsoup;
+/* MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO - GERÊNCIA DE INFORMAÇÃO
+   SISTEMA DE CONSULTA PROCESSO
+   BY ALANNE SOARES 03/02/2018 17:11*/
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.*;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Scanner;
+import org.jsoup.*;
+import org.jsoup.select.Elements;
+import org.w3c.dom.*; import org.xml.sax.*; import javax.xml.parsers.*; import java.io.*; import java.net.*;
 
 public class Application {
 
+    // 0018903-25.2016.8.19.0000 , 0036576-94.2017.8.19.0000 , 0348331-73.2016.8.19.0001 , 0011042-43.2016.8.19.0014
+
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
 
-        // CNJ (0018903-25.2016.8.19.0000 , 0036576-94.2017.8.19.0000, 0348331-73.2016.8.19.0001 )
+        // CHAMANDO PELA CLASSE CONSULTA
+        String consultaPorNumero = Consulta.info("0348331-73.2016.8.19.0001");
 
-        String consulta = "http://www4.tjrj.jus.br/numeracaoUnica/faces/index.jsp?numProcesso=0348331-73.2016.8.19.0001";
-        //boolean url = Boolean.getBoolean(consulta);
-        //url = true;
-        // http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N=201707601084
-
+        // CASO PROCESSO DE 1ª INSTÂNCIA
         try {
-            org.jsoup.nodes.Document docURL = Jsoup.connect(consulta).get();
-            org.jsoup.nodes.Element elemento = docURL.selectFirst("#NumProc");
 
-            RecuperaUrlPost recoverUrlPost = new RecuperaUrlPost();
-            recoverUrlPost.sendPost(elemento.attr("value"));
+            // CHAMAR URL E GERAR ARQUIVO
+            org.jsoup.nodes.Document docURL = Jsoup.connect(consultaPorNumero).get();
+            org.jsoup.nodes.Element element = docURL.selectFirst("#NumProc");
+            RecuperaUrlPost.sendPost(element.attr("value"));
 
+            // CHAMAR ARQUIVO GERADO
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-            dbf.setNamespaceAware(false);
             DocumentBuilder docBuilder = dbf.newDocumentBuilder();
             Document doc = docBuilder.parse(new File("dados.xml"));
 
+            // LER ELEMENTOS DESEJADOS
             Element codCNJ = (Element) doc.getElementsByTagName("CodCNJ").item(0);
             Element codProcLink = (Element) doc.getElementsByTagName("CodProcLink").item(0);
             Element descrClasse = (Element) doc.getElementsByTagName("DescrClasse").item(0);
             Element orgaoJulgador = (Element) doc.getElementsByTagName("OrgaoJulgador").item(0);
 
+            // IMPRIMIR NO CONSOLE
             System.out.println(
-                    "---------------------------------------------------------------------" +
+                    "-----------------------------------------------------------------------" +
                             "\n                             Resultado" +
-                            "\n---------------------------------------------------------------------" +
-                            "\nProcesso: " + codCNJ.getTextContent() +
-                            "\nNúmero TJ: " + codProcLink.getTextContent() +
+                            "\n                Processo: " + codCNJ.getTextContent() +
+                            "\n-----------------------------------------------------------------------" +
+                            "\nNúmero TJ: " + codProcLink.getTextContent().replace(".","") +
                             "\nClasse: " + descrClasse.getTextContent() +
                             "\nÓrgão Julgador: " + orgaoJulgador.getTextContent()
             );
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
+        }
 
-            File file = new File("index.html");
-            URL url = new URL(consulta);
-            new LoadPage().getPage(url, file);
+        //CASO PROCESSO DE 2ª INSTÂNCIA
+        catch (Exception e) {
 
-            /*DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-            DocumentBuilder docBuilder = dbf.newDocumentBuilder();
-            Document index = docBuilder.parse(new File("index.html"));*/
+            // CHAMAR URL
+            URL url = new URL(consultaPorNumero);
+            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+            while ((in.readLine()) != null);
+            in.close();
 
-            /*FileReader arq;
-            BufferedReader lerArq;
-            String linha;
+            // PESQUISAR URL DESEJADA NA TAG DO FORM
+            org.jsoup.nodes.Document docIndex = Jsoup.connect(url.toString()).get(); //conectar o document pela url
+            org.jsoup.nodes.Element element = docIndex.getElementById("form"); //pegar o elemento da tag pelo ID do formulário
+            Elements a = element.getElementsByAttribute("href");
+            org.jsoup.nodes.Element href = a.last();
+            String value = href.getElementsByAttribute("href").attr("href"); //valor do atributo
 
-            if (file != null) {
-                arq = new FileReader(file);
-                lerArq = new BufferedReader(arq);
-                linha = lerArq.readLine();         //lê primeira linha
+            // PESQUISAR VALOR http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N= DO ATRIBUTO HREF
+            URL consultaProcesso = new URL(value);
+            BufferedReader br = new BufferedReader(new InputStreamReader(consultaProcesso.openStream()));
+            while ((br.readLine()) != null);
+            in.close();
 
-                while (linha != null) {
-                    //System.out.println(linha);
+            //ENTRAR NA URL ENCONTRADA - http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N= E GERAR ARQUIVO
+            org.jsoup.nodes.Document jsoup = Jsoup.connect(consultaProcesso.toString()).get();
+            org.jsoup.nodes.Element id = jsoup.getElementById("#NumProc");
+            String valueID = id.getElementsByAttribute("value").attr("value");
 
-                    linha = lerArq.readLine();     //lê da segunda linha pra frente
-                }
+            // LER ARQUIVO GERADO
+            DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dB = dBF.newDocumentBuilder();
+            Document d = dB.parse(new File("dados.xml"));
 
-                arq.close();*/
-                /*DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-                DocumentBuilder docBuilder = dbf.newDocumentBuilder();
-                Document index = docBuilder.parse(new File("index.html"));
-            Element element = (Element) index.getDocumentElement();
-            Element link = (Element) element.getElementsByTagName("<link>").item(0);
-                Element tag = (Element) element.getElementsByTagName("<link></link>").item(0);
-            Node tagLink = (Node) link.replaceChild(link, tag);*/
+            // LER ELEMENTOS DESEJADOS
+            Element codCNJ = (Element) d.getElementsByTagName("CodCNJ").item(0);
+            Element descrClasse = (Element) d.getElementsByTagName("DescrClasse").item(0);
+            Element orgaoJulgador = (Element) d.getElementsByTagName("OrgaoJulgador").item(0);
 
-            /*FileReader ler = new FileReader("index.html");
-            BufferedReader leitor = new BufferedReader(ler);
-            String linha;
-            String linhaReescrita;
-            while((linha = leitor.readLine())!= null) {
-                System.out.println(linha);
-                linhaReescrita = linha.replaceAll(linha, "Novo texto");
-                System.out.println("\n" + linhaReescrita);
-            }
-        }*/
-            OutputStream bytes = new FileOutputStream("index.html", true); // passado "true" para gravar no mesmo arquivo
-            OutputStreamWriter chars = new OutputStreamWriter(bytes);
-            BufferedWriter strings = new BufferedWriter(chars);
-
-            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-            DocumentBuilder docBuilder = dbf.newDocumentBuilder();
-            Document index = docBuilder.parse(new File("index.html"));
-
-            Element element = index.getDocumentElement();
-            Element tag = (Element) element.getElementsByTagName("link").item(0);
-
-            strings.write("ALANNE");
-            strings.close();
-
-
-            //replaceLinha(new File("index.html"), "<link>", "<link/>");
-                /*Element element = (Element) index.getDocumentElement();
-                Element link = (Element) element.getElementsByTagName("<link></link>");
-
-                Node node = link.appendChild(link);
-                System.out.println(node);*/
-                /*Element form = (Element) index.getElementById("form");
-                Element a = (Element) form.getElementsByTagName("a").item(1);
-                Element href = (Element) a.getElementsByTagName("href").item(1);
-                System.out.println(href.getAttribute("href"));*/
+            // IMPRIMIR NO CONSOLE
+            System.out.println(
+                    "-----------------------------------------------------------------------" +
+                    "\n                             Resultado" +
+                    "\n                Processo: " + codCNJ.getTextContent() +
+                    "\n-----------------------------------------------------------------------" +
+                    "\nNúmero TJ: " + valueID +
+                    "\nClasse: " + descrClasse.getTextContent() +
+                    "\nÓrgão Julgador: " + orgaoJulgador.getTextContent()
+            );
         }
     }
 }
-
-//MÉTODO QUE ALTERA LINHA
-
-    /*public static void replaceLinha(File f, String linhaAlterar, String linhaAlterada) {
-        File nf = new File("index.html");
-        FileWriter fw = null;
-        Scanner s = null;
-        try {
-            fw = new FileWriter(nf);
-            s = new Scanner(f);
-
-            while (s.hasNextLine()) {
-                String linha = s.nextLine();
-
-                linha = linha.replace(linhaAlterar, linhaAlterada);
-
-                try {
-                    fw.write(linha + System.getProperty("line.separator"));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                fw.close();
-                s.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        f.delete();
-        nf.renameTo(f);
-    }
-}*/

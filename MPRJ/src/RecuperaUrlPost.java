@@ -2,17 +2,17 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+// CLASSE QUE CHAMA PELO HEADER
 public class RecuperaUrlPost {
 
     public static void sendPost(String processoCNJ){
 
             String request = "http://www4.tjrj.jus.br/ejud/WS/ConsultaEjud.asmx/DadosProcesso_1";
-            URL url;
-            int qtde = 0;
+            int n = 0;
 
             try {
 
-                url = new URL(request + "?nAntigo=" + processoCNJ + "&pCPF=");
+                URL url = new URL(request + "?nAntigo=" + processoCNJ + "&pCPF=");
                 HttpURLConnection conn;
                 conn = (HttpURLConnection) url.openConnection();
                 conn.setDoOutput(true);
@@ -26,8 +26,8 @@ public class RecuperaUrlPost {
 
                 OutputStreamWriter bufferOut = new OutputStreamWriter(new FileOutputStream("dados.xml"));
                 for (int c = in.read(); c != -1; c = in.read()) {
-                    qtde++;
-                    if (qtde > 200000) {
+                    n++;
+                    if (n > 200000) {
                         break;
                     }
                     buffer.append((char) c);
@@ -41,4 +41,3 @@ public class RecuperaUrlPost {
             }
         }
     }
-
