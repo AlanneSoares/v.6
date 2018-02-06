@@ -24,14 +24,14 @@ public class Application {
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
 
         // CHAMANDO PELA CLASSE CONSULTA
-        String consultaProcesso = Consulta.info("0348331-73.2016.8.19.0001");
+        String consultaProcesso = Consulta.info("0011042-43.2016.8.19.0014");
 
         try {
 
             // CHAMAR URL E GERAR ARQUIVO
             org.jsoup.nodes.Document docUrl = Jsoup.connect(consultaProcesso).get();
             org.jsoup.nodes.Element element = docUrl.getElementById("NumProc");
-            //RecuperaUrlPost.sendPost(element.attr("value"));
+            RecuperaUrlPost.sendPost(element.attr("value"));
 
             // CHAMAR ARQUIVO GERADO
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -60,65 +60,57 @@ public class Application {
         catch (Exception e) {
 
             // CHAMAR URL
-            /*URL url = new URL(consultaProcesso);
-            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
-            while ((in.readLine()) != null) ;
-            in.close();*/
-
+            URL url = new URL(consultaProcesso);
 
             // PESQUISAR URL DESEJADA NA TAG DO FORM
-            /*org.jsoup.nodes.Document docIndex = Jsoup.connect(url.toString()).get();                //conectar o document pela url
+            org.jsoup.nodes.Document docIndex = Jsoup.connect(url.toString()).get();                //conectar o document pela url
             org.jsoup.nodes.Element element = docIndex.getElementById("form");                      //pegar o elemento da tag pelo ID do formulário
             Elements a = element.getElementsByAttribute("href");                                //procurando a tag href do form
             org.jsoup.nodes.Element href = a.last();                                                //buscando o próximo link desejado
-            String valueHref = href.getElementsByAttribute("href").attr("href"); */   //valor do atributo
+            String valueHref = href.getElementsByAttribute("href").attr("href");  //valor do atributo
+            System.out.println(valueHref);
 
             // PROCURA URL http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N= DO ATRIBUTO HREF
-            /*URL buscaNumeroTJ = new URL(valueHref);
-            BufferedReader br = new BufferedReader(new InputStreamReader(buscaNumeroTJ.openStream()));
-            while ((br.readLine()) != null) ;
-            br.close();*/
-
+            URL buscaNumeroTJ = new URL(valueHref);
 
             //CONECTA A URL ENCONTRADA - http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N= E ENCONTRA O VALOR DO CNJ
             /*org.jsoup.nodes.Document jsoup = Jsoup.connect(buscaNumeroTJ.toString()).get();
             org.jsoup.nodes.Element id = jsoup.getElementById("NumProc");
-            String valueID = id.getElementsByAttribute("value").attr("value");
-            System.out.println(valueID);*/
+            String valueID = id.getElementsByAttribute("value").attr("value");*/
+            org.jsoup.nodes.Document docUrl = Jsoup.connect(buscaNumeroTJ.toString()).get();
+            org.jsoup.nodes.Element el = docUrl.getElementById("NumProc");
+            String valueID = el.getElementsByAttribute("value").attr("value");
+            System.out.println(valueID);
+            //RecuperaUrlPost.sendPost(el.attr("value"));
 
-            /*DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dB = dBF.newDocumentBuilder();
-            Document d = dB.parse(new File ("dados.xml"));
-            System.out.println(d);*/
-            //RecuperaUrlPost.sendPost(element.attr("value"));
+
 
             // ---------- Fim de busca -------------
 
 
             // LER ARQUIVO GERADO
-            /*DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
+            DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
             DocumentBuilder dB = dBF.newDocumentBuilder();
-            Document d = dB.parse(new File ("dados.xml"));*/
+            Document d = dB.parse(new File ("dados.xml"));
 
 
             // LER ELEMENTOS DESEJADOS
-            /*Element codCNJ = (Element) d.getElementsByTagName("CodCNJ").item(0);
+            Element codCNJ = (Element) d.getElementsByTagName("CodCNJ").item(0);
             Element descrClasse = (Element) d.getElementsByTagName("DescrClasse").item(0);
-            Element orgaoJulgador = (Element) d.getElementsByTagName("OrgaoJulgador").item(0);*/
+            Element orgaoJulgador = (Element) d.getElementsByTagName("OrgaoJulgador").item(0);
 
 
             // IMPRIMIR NO CONSOLE
-            /*System.out.println(
+            System.out.println(
                     "-----------------------------------------------------------------------" +
                     "\n                             Resultado" +
                     "\n                Processo: " + codCNJ.getTextContent() +
                     "\n-----------------------------------------------------------------------" +
-                    "\nNúmero TJ: " + codProcLink.getTextContent().replace(".", "")  +
+                    "\nNúmero TJ: " + valueID  +
                     "\nClasse: " + descrClasse.getTextContent() +
                     "\nÓrgão Julgador: " + orgaoJulgador.getTextContent()
-            );*/
+            );
 
-            RecuperaUrlPost.sendPost();
         }
     }
 }

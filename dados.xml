@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Processo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+  <CodCNJ>0011042-43.2016.8.19.0014</CodCNJ>
+  <CodProc />
+  <CodProcLink>2017.254.02067</CodProcLink>
+  <IdProc>121846127</IdProc>
+  <CodDoc>13622646</CodDoc>
+  <DtAutua>2017-10-31T13:35:00</DtAutua>
+  <DescrClasse>RECURSO ESPECIAL - CRIMINAL</DescrClasse>
+  <DescrAssunto>Porte Ilegal de Arma de Fogo de Uso Permitido / Crimes do Sistema Nacional de Armas / Crimes Previstos na Legislação Extravagante / DIREITO PENAL</DescrAssunto>
+  <NumProcPrimInst>0011042-43.2016.8.19.0014</NumProcPrimInst>
+  <NumProcPrimInstAnt> </NumProcPrimInstAnt>
+  <NumProcPrimInstLink>2017.050.09318</NumProcPrimInstLink>
+  <CodDocAssoc>13193065</CodDocAssoc>
+  <DescrComarca>RIO DE JANEIRO</DescrComarca>
+  <Vara />
+  <OrgaoJulgador />
+  <Relator />
+  <Revisor />
+  <DtHrUltMov>2017-11-14T13:48:00</DtHrUltMov>
+  <DtHrSess />
+  <DtHrSessDate>0001-01-01T00:00:00</DtHrSessDate>
+  <NomeAutor>RECTE</NomeAutor>
+  <NomeReu>RECDO</NomeReu>
+  <Autor>MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</Autor>
+  <Reu>JULIO SERGIO OLIVEIRA SILVA e outro</Reu>
+  <NomeAdic />
+  <ParteAdic />
+  <DescrUltMov>Informacoes/Avisos Intimação eletrônica aos interessados</DescrUltMov>
+  <Sigiloso>false</Sigiloso>
+  <SegredoJustica>false</SegredoJustica>
+  <Eletronico>true</Eletronico>
+  <LocalAtualProcesso>3VP - DIVISAO DE PROCESSAMENTO</LocalAtualProcesso>
+  <Partes>
+    <Parte>
+      <Tipo>RECORRENTE</Tipo>
+      <Nome>MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</Nome>
+    </Parte>
+    <Parte>
+      <Tipo>RECORRIDO</Tipo>
+      <Nome>JULIO SERGIO OLIVEIRA SILVA</Nome>
+    </Parte>
+    <Parte>
+      <Tipo>RECORRIDO</Tipo>
+      <Nome>JHONATHAN REIS ALVARENGA</Nome>
+    </Parte>
+    <Parte>
+      <Tipo>DEFENSOR PÚBLICO</Tipo>
+      <Nome>DEFENSORIA PÚBLICA GERAL DO ESTADO DO RIO DE JANEIRO</Nome>
+    </Parte>
+  </Partes>
+  <DadosUltMovimentos>
+    <DadosMovimento>
+      <Descr>Data do Movimento</Descr>
+      <Valor>14/11/2017 13:48</Valor>
+      <Txt />
+    </DadosMovimento>
+    <DadosMovimento>
+      <Descr>Complemento 1</Descr>
+      <Valor>Intimação eletrônica aos interessados</Valor>
+      <Txt />
+    </DadosMovimento>
+    <DadosMovimento>
+      <Descr>Observação</Descr>
+      <Valor />
+      <Txt>Fase gerada automaticamente pela tela de Término de Intimações</Txt>
+    </DadosMovimento>
+  </DadosUltMovimentos>
+  <RecursosInterpostos />
+  <InteiroTeor />
+  <TemPecas>true</TemPecas>
+  <Origem>2</Origem>
+  <DescrOrigem>TJRJ 2a instância</DescrOrigem>
+  <IndArqBaixa>true</IndArqBaixa>
+  <CodAmbienteProc>2</CodAmbienteProc>
+  <DtHrCons>2018-02-06T15:37:22</DtHrCons>
+  <ProtocolosPendenteJuntada>
+    <ProtocoloPendenteJuntada>
+      <CodDoc>13738958</CodDoc>
+      <CodDocProc>13622646</CodDocProc>
+      <DtHrReg>2017-12-08T15:39:00</DtHrReg>
+      <NumPet>201700693824</NumPet>
+      <NumProger />
+      <UsuReg>PETICAOWEB</UsuReg>
+      <DtHrRegStr>08/12/2017</DtHrRegStr>
+    </ProtocoloPendenteJuntada>
+  </ProtocolosPendenteJuntada>
+  <Personagens>
+    <Parte>
+      <Tipo>RECORRENTE</Tipo>
+      <Nome>MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</Nome>
+    </Parte>
+    <Parte>
+      <Tipo>RECORRIDO</Tipo>
+      <Nome>JULIO SERGIO OLIVEIRA SILVA</Nome>
+    </Parte>
+    <Parte>
+      <Tipo>RECORRIDO</Tipo>
+      <Nome>JHONATHAN REIS ALVARENGA</Nome>
+    </Parte>
+    <Parte>
+      <Tipo>DEFENSOR PÚBLICO</Tipo>
+      <Nome>DEFENSORIA PÚBLICA GERAL DO ESTADO DO RIO DE JANEIRO</Nome>
+    </Parte>
+  </Personagens>
+  <Assuntos>
+    <Assunto>
+      <CodDoc>13622646</CodDoc>
+      <CodAss>30286</CodAss>
+      <Descr>Porte Ilegal de Arma de Fogo de Uso Permitido / Crimes do Sistema Nacional de Armas / Crimes Previstos na Legislação Extravagante / DIREITO PENAL</Descr>
+      <DescrAssunto>30286 - Porte Ilegal de Arma de Fogo de Uso Permitido / Crimes do Sistema Nacional de Armas / Crimes Previstos na Legislação Extravagante / DIREITO PENAL</DescrAssunto>
+      <NumOrd>1</NumOrd>
+    </Assunto>
+  </Assuntos>
+  <Audiencias />
+  <PermissaoSegrJus>false</PermissaoSegrJus>
+  <UsuVincProc>false</UsuVincProc>
+</Processo>
