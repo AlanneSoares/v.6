@@ -31,6 +31,7 @@ public class Application {
             // CHAMAR URL E GERAR ARQUIVO
             org.jsoup.nodes.Document docUrl = Jsoup.connect(consultaProcesso).get();
             org.jsoup.nodes.Element element = docUrl.getElementById("NumProc");
+            String valueHref = element.getElementsByAttribute("href").attr("href");
             RecuperaUrlPost.sendPost(element.attr("value"));
 
             // CHAMAR ARQUIVO GERADO
@@ -40,7 +41,7 @@ public class Application {
 
             // LER ELEMENTOS DESEJADOS
             Element codCNJ = (Element) doc.getElementsByTagName("CodCNJ").item(0);
-            Element codProcLink = (Element) doc.getElementsByTagName("CodProcLink").item(0);
+            //Element codProcLink = (Element) doc.getElementsByTagName("CodProcLink").item(0);
             Element descrClasse = (Element) doc.getElementsByTagName("DescrClasse").item(0);
             Element orgaoJulgador = (Element) doc.getElementsByTagName("OrgaoJulgador").item(0);
 
@@ -50,7 +51,7 @@ public class Application {
                             "\n                             Resultado" +
                             "\n                Processo: " + codCNJ.getTextContent() +
                             "\n-----------------------------------------------------------------------" +
-                            "\nNúmero TJ: " + codProcLink.getTextContent().replace(".", "") +
+                            "\nNúmero TJ: " + valueHref +
                             "\nClasse: " + descrClasse.getTextContent() +
                             "\nÓrgão Julgador: " + orgaoJulgador.getTextContent()
             );
@@ -80,8 +81,7 @@ public class Application {
             org.jsoup.nodes.Document docUrl = Jsoup.connect(buscaNumeroTJ.toString()).get();
             org.jsoup.nodes.Element el = docUrl.getElementById("NumProc");
             String valueID = el.getElementsByAttribute("value").attr("value");
-            System.out.println(valueID);
-            //RecuperaUrlPost.sendPost(el.attr("value"));
+            RecuperaUrlPost.sendPost(el.attr("value"));
 
 
 
