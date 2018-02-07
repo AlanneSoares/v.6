@@ -12,12 +12,9 @@ public class RecuperaUrlPost {
 
     public static void sendPost(String processoCNJ) throws MalformedURLException {
 
-        int n = 0;
-
         try {
 
             URL url = new URL(Request.r() + "?nAntigo=" + processoCNJ + "&pCPF=");
-            BufferedReader b = new BufferedReader(new InputStreamReader(url.openStream()));
 
             HttpURLConnection conn;
             conn = (HttpURLConnection) url.openConnection();
@@ -28,18 +25,16 @@ public class RecuperaUrlPost {
             conn.setUseCaches(false);
 
             Reader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            StringBuffer buffer = new StringBuffer();
-
             OutputStreamWriter bufferOut = new OutputStreamWriter(new FileOutputStream("dados.xml"));
+
+            int n = 0;
             for (int c = in.read(); c != -1; c = in.read()) {
                 n++;
                 if (n > 200000) {
                     break;
                 }
-                buffer.append((char) c);
                 bufferOut.write((char) c);
             }
-
             bufferOut.close();
 
         } catch (IOException e) {
