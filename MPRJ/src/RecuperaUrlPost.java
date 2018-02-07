@@ -33,12 +33,15 @@ public class RecuperaUrlPost {
                 if (n > 200000) {
                     break;
                 }
+
                 bufferOut.write((char) c);
             }
+            
             bufferOut.close();
 
         } catch (IOException e) {
             e.printStackTrace();
+
         }
     }
 }

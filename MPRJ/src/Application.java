@@ -61,7 +61,6 @@ public class Application {
             );
         }
 
-
         catch (Exception e) {
 
             // CHAMA A URL

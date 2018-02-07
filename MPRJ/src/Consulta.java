@@ -7,6 +7,7 @@ public class Consulta {
 
         URL request = new URL("http://www4.tjrj.jus.br/numeracaoUnica/faces/index.jsp?numProcesso=");
         return request + processoCNJ;
+        
     }
 }
 
