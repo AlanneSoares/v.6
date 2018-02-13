@@ -1,79 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Processo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
-  <CodCNJ>0036576-94.2017.8.19.0000</CodCNJ>
+  <CodCNJ>0011042-43.2016.8.19.0014</CodCNJ>
   <CodProc />
-  <CodProcLink>2017.008.02065</CodProcLink>
-  <IdProc>121109623</IdProc>
-  <CodDoc>13241589</CodDoc>
-  <DtAutua>2017-07-07T15:14:00</DtAutua>
-  <DescrClasse>CONFLITO DE COMPETENCIA</DescrClasse>
-  <DescrAssunto>Contratos Administrativos / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</DescrAssunto>
-  <NumProcPrimInst>0414090-81.2016.8.19.0001</NumProcPrimInst>
+  <CodProcLink>2017.050.09318</CodProcLink>
+  <IdProc>121021290</IdProc>
+  <CodDoc>13193065</CodDoc>
+  <DtAutua>2017-06-23T15:15:00</DtAutua>
+  <DescrClasse>APELAÇÃO</DescrClasse>
+  <DescrAssunto>Porte Ilegal de Arma de Fogo de Uso Permitido / Crimes do Sistema Nacional de Armas / Crimes Previstos na Legislação Extravagante / DIREITO PENAL</DescrAssunto>
+  <NumProcPrimInst>0011042-43.2016.8.19.0014</NumProcPrimInst>
   <NumProcPrimInstAnt />
-  <NumProcPrimInstLink>2016.001.360534-7</NumProcPrimInstLink>
+  <NumProcPrimInstLink>2016.014.010650-2</NumProcPrimInstLink>
   <CodDocAssoc />
   <DescrComarca>RIO DE JANEIRO</DescrComarca>
-  <Vara>CAPITAL CARTORIO UNICO JUI ESP FAZENDA PUBLICA</Vara>
-  <OrgaoJulgador>VIGÉSIMA SEGUNDA CAMARA CIVEL</OrgaoJulgador>
-  <Relator>DES. CARLOS EDUARDO MOREIRA DA SILVA</Relator>
-  <Revisor />
-  <DtHrUltMov>2017-12-11T14:49:00</DtHrUltMov>
-  <DtHrSess>05/12/2017 11:00:00</DtHrSess>
-  <DtHrSessDate>2017-12-05T11:00:00</DtHrSessDate>
-  <NomeAutor>SUSCTE</NomeAutor>
-  <NomeReu>SUSCDO</NomeReu>
-  <Autor>EDWILSON FRANCISCO ALVES</Autor>
-  <Reu>JUÍZO DE DIREITO DA 2ª VARA DA FAZENDA PÚBLICA DA COMARCA DA CAPITAL e outro</Reu>
+  <Vara>CAMPOS DOS GOYTACAZES 2 VARA CRIMINAL</Vara>
+  <OrgaoJulgador>SÉTIMA CAMARA CRIMINAL</OrgaoJulgador>
+  <Relator>DES. JOSE ROBERTO LAGRANHA TAVORA</Relator>
+  <Revisor>DES. JOAQUIM DOMINGOS DE ALMEIDA NETO</Revisor>
+  <DtHrUltMov>2017-10-31T15:11:00</DtHrUltMov>
+  <DtHrSess>10/10/2017 13:00:00</DtHrSess>
+  <DtHrSessDate>2017-10-10T13:00:00</DtHrSessDate>
+  <NomeAutor>APTE</NomeAutor>
+  <NomeReu>APDO</NomeReu>
+  <Autor>JULIO SERGIO OLIVEIRA SILVA e outro</Autor>
+  <Reu>MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</Reu>
   <NomeAdic />
   <ParteAdic />
-  <DescrUltMov>Intimação Eletrônica - PROCURADORIA GERAL DO ESTADO DO RJ Ciência </DescrUltMov>
+  <DescrUltMov>Remessa do Escrivão/Diretor/Secretário para 3VP - TERCEIRA VICE-PRESIDENCIA </DescrUltMov>
   <Sigiloso>false</Sigiloso>
   <SegredoJustica>false</SegredoJustica>
   <Eletronico>true</Eletronico>
-  <LocalAtualProcesso>DGJUR - SECRETARIA DA 22ª CÂMARA CÍVEL</LocalAtualProcesso>
+  <LocalAtualProcesso>3VP - DIVISAO DE PROCESSAMENTO</LocalAtualProcesso>
   <Partes>
     <Parte>
-      <Tipo>AUTOR</Tipo>
-      <Nome>EDWILSON FRANCISCO ALVES</Nome>
+      <Tipo>APELANTE</Tipo>
+      <Nome>JULIO SERGIO OLIVEIRA SILVA</Nome>
+    </Parte>
+    <Parte>
+      <Tipo>APELANTE</Tipo>
+      <Nome>JHONATHAN REIS ALVARENGA</Nome>
     </Parte>
     <Parte>
       <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ137357 - PATRICIA FIGUEIREDO SIMOES</Nome>
+      <Nome>DP000000 - DEFENSORIA PUBLICA</Nome>
     </Parte>
     <Parte>
-      <Tipo>RÉU</Tipo>
-      <Nome>JUÍZO DE DIREITO DA 2ª VARA DA FAZENDA PÚBLICA DA COMARCA DA CAPITAL</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>RÉU</Tipo>
-      <Nome>JUÍZO DE DIREITO DO 1º JUIZADO ESPECIAL FAZENDÁRIO DA COMARCA DA CAPITAL</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>INTERESSADO</Tipo>
-      <Nome>ESTADO DO RIO DE JANEIRO</Nome>
+      <Tipo>APELADO</Tipo>
+      <Nome>MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</Nome>
     </Parte>
   </Partes>
   <DadosUltMovimentos>
     <DadosMovimento>
       <Descr>Data do Movimento</Descr>
-      <Valor>11/12/2017 14:49</Valor>
+      <Valor>31/10/2017 15:11</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Destinatário</Descr>
-      <Valor>PROCURADORIA GERAL DO ESTADO DO RJ</Valor>
+      <Valor>3VP - TERCEIRA VICE-PRESIDENCIA</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
-      <Descr>Motivo</Descr>
-      <Valor>Ciência</Valor>
+      <Descr>Local Responsável</Descr>
+      <Valor>3VP - DIVISAO DE AUTUACAO</Valor>
+      <Txt />
+    </DadosMovimento>
+    <DadosMovimento>
+      <Descr>Destino</Descr>
+      <Valor>3VP - DIVISAO DE PROCESSAMENTO</Valor>
       <Txt />
     </DadosMovimento>
   </DadosUltMovimentos>
   <DadosJulgamento>
     <DadosMovimento>
       <Descr>Data do Movimento</Descr>
-      <Valor>05/12/2017 11:00</Valor>
+      <Valor>10/10/2017 13:00</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
@@ -83,12 +84,12 @@
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Motivo</Descr>
-      <Valor>Não-Acolhimento de Embargos de Declaração</Valor>
+      <Valor>Provimento</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>COMPL.3</Descr>
-      <Valor>Embargos de Declaração Não-Acolhidos - Unanimidade</Valor>
+      <Valor>Conhecido o Recurso e Provido - Unanimidade</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
@@ -98,17 +99,17 @@
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Motivo</Descr>
-      <Valor>Não-Acolhimento de Embargos de Declaração</Valor>
+      <Valor>Provimento</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>COMPL.3</Descr>
-      <Valor>Embargos de Declaração Não-Acolhidos - Unanimidade</Valor>
+      <Valor>Conhecido o Recurso e Provido - Unanimidade</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Data da Sessão</Descr>
-      <Valor>05/12/2017 11:00</Valor>
+      <Valor>10/10/2017 13:00</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
@@ -123,17 +124,22 @@
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Presidente</Descr>
-      <Valor>DES. ODETE KNAACK DE SOUZA</Valor>
+      <Valor>DES. SIRO DARLAN DE OLIVEIRA</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Relator</Descr>
-      <Valor>DES. CARLOS EDUARDO MOREIRA DA SILVA</Valor>
+      <Valor>DES. JOSE ROBERTO LAGRANHA TAVORA</Valor>
+      <Txt />
+    </DadosMovimento>
+    <DadosMovimento>
+      <Descr>Revisor</Descr>
+      <Valor>DES. JOAQUIM DOMINGOS DE ALMEIDA NETO</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Designado p/ Acórdão</Descr>
-      <Valor>DES. CARLOS EDUARDO MOREIRA DA SILVA</Valor>
+      <Valor>DES. JOSE ROBERTO LAGRANHA TAVORA</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
@@ -143,138 +149,101 @@
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Decisão</Descr>
-      <Valor>Embargos de Declaração Não-Acolhidos - Unanimidade</Valor>
+      <Valor>Conhecido o Recurso e Provido - Unanimidade</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Texto</Descr>
       <Valor />
-      <Txt>
-POR UNANIMIDADE, NEGOU-SE PROVIMENTO AOS EMBARGOS DE DECLARAÇÃO, NOS TERMOS DO VOTO DO RELATOR.
-</Txt>
+      <Txt>Por unanimidade, em prover o recurso para absolver os apelantes, e restituir o pagamento da fiança, na forma do voto do Des. Relator.</Txt>
     </DadosMovimento>
   </DadosJulgamento>
-  <RecursosInterpostos />
+  <RecursosInterpostos>
+    <RecursoInterposto>
+      <Descricao>RECURSO ESPECIAL - CRIMINAL</Descricao>
+      <DtAutua>2017-10-31T13:35:00</DtAutua>
+      <Processo>0011042-43.2016.8.19.0014</Processo>
+      <ProcEquiv>2017.254.02067</ProcEquiv>
+      <NumAntigo> </NumAntigo>
+    </RecursoInterposto>
+  </RecursosInterpostos>
   <PublicacaoAcordao>
-    <DataPublicacao>2017-08-18T00:00:00</DataPublicacao>
-    <NroDiario>2788805</NroDiario>
-    <PagDiario>531/552</PagDiario>
-    <DataPublicacaoStr>18/08/2017</DataPublicacaoStr>
+    <DataPublicacao>2017-10-17T00:00:00</DataPublicacao>
+    <NroDiario>2836578</NroDiario>
+    <PagDiario>138/152</PagDiario>
+    <DataPublicacaoStr>17/10/2017</DataPublicacaoStr>
   </PublicacaoAcordao>
   <InteiroTeor>
     <InteiroTeor>
-      <DtHrMov>2017-07-11T15:38:00</DtHrMov>
+      <DtHrMov>2017-06-26T12:35:00</DtHrMov>
       <Descr>Despacho  Mero expediente</Descr>
-      <ArqGED>0004136B38046B460E33217631F92FDC9996C50645554A19</ArqGED>
+      <ArqGED>0004DB8663945ACA8D18AE3DB14815920536C5063D5A2234</ArqGED>
       <SegrJust>false</SegrJust>
       <IndAltera>false</IndAltera>
       <DescrAssoc />
       <ArqGEDAssoc />
       <IndAlteraAssoc>true</IndAlteraAssoc>
       <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>11/07/2017</DtHrMovStr>
+      <DtHrMovStr>26/06/2017</DtHrMovStr>
       <DtHrMovAssocStr />
     </InteiroTeor>
     <InteiroTeor>
-      <DtHrMov>2017-07-26T17:03:00</DtHrMov>
+      <DtHrMov>2017-09-19T11:12:00</DtHrMov>
       <Descr>Despacho  Peço dia para julgamento</Descr>
-      <ArqGED>0004616BC35883959928B11FE8B8C1E46AE6C5064D1B1D54</ArqGED>
+      <ArqGED>0004CF42421C53126867521F36769620978FC50702421920</ArqGED>
       <SegrJust>false</SegrJust>
       <IndAltera>false</IndAltera>
       <DescrAssoc />
       <ArqGEDAssoc />
       <IndAlteraAssoc>true</IndAlteraAssoc>
       <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>26/07/2017</DtHrMovStr>
+      <DtHrMovStr>19/09/2017</DtHrMovStr>
       <DtHrMovAssocStr />
     </InteiroTeor>
     <InteiroTeor>
-      <DtHrMov>2017-08-17T10:43:00</DtHrMov>
+      <DtHrMov>2017-10-11T14:05:00</DtHrMov>
       <Descr>Acórdão</Descr>
-      <ArqGED>000446514D2660A31CF913A5C4B2F6EA2559C5065740324A</ArqGED>
+      <ArqGED>0004B0A276D748505A8A280CE790FA1EA664C5070E221F38</ArqGED>
       <SegrJust>false</SegrJust>
       <IndAltera>false</IndAltera>
       <DescrAssoc />
       <ArqGEDAssoc />
       <IndAlteraAssoc>true</IndAlteraAssoc>
       <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>17/08/2017</DtHrMovStr>
-      <DtHrMovAssocStr />
-    </InteiroTeor>
-    <InteiroTeor>
-      <DtHrMov>2017-09-26T16:58:00</DtHrMov>
-      <Descr>Despacho  Mero expediente</Descr>
-      <ArqGED>0004EEBEDFAB01FEE284BA6D7827626095EFC5070621181A</ArqGED>
-      <SegrJust>false</SegrJust>
-      <IndAltera>false</IndAltera>
-      <DescrAssoc />
-      <ArqGEDAssoc />
-      <IndAlteraAssoc>true</IndAlteraAssoc>
-      <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>26/09/2017</DtHrMovStr>
-      <DtHrMovAssocStr />
-    </InteiroTeor>
-    <InteiroTeor>
-      <DtHrMov>2017-11-17T16:34:00</DtHrMov>
-      <Descr>Despacho  Em Mesa</Descr>
-      <ArqGED>0004325475D3E7F01080427CA3FB89B57E14C507210C3939</ArqGED>
-      <SegrJust>false</SegrJust>
-      <IndAltera>false</IndAltera>
-      <DescrAssoc />
-      <ArqGEDAssoc />
-      <IndAlteraAssoc>true</IndAlteraAssoc>
-      <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>17/11/2017</DtHrMovStr>
-      <DtHrMovAssocStr />
-    </InteiroTeor>
-    <InteiroTeor>
-      <DtHrMov>2017-12-07T16:30:00</DtHrMov>
-      <Descr>Acórdão</Descr>
-      <ArqGED>000487AE5EE7AA2A6BC6B489A5D5B9E32E3AC5072C1A274E</ArqGED>
-      <SegrJust>false</SegrJust>
-      <IndAltera>false</IndAltera>
-      <DescrAssoc />
-      <ArqGEDAssoc />
-      <IndAlteraAssoc>true</IndAlteraAssoc>
-      <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>07/12/2017</DtHrMovStr>
+      <DtHrMovStr>11/10/2017</DtHrMovStr>
       <DtHrMovAssocStr />
     </InteiroTeor>
   </InteiroTeor>
   <TemPecas>true</TemPecas>
-  <Origem>8</Origem>
-  <DescrOrigem>Juizados</DescrOrigem>
-  <IndArqBaixa>false</IndArqBaixa>
+  <Origem>1</Origem>
+  <DescrOrigem>TJRJ 1a instância</DescrOrigem>
+  <IndArqBaixa>true</IndArqBaixa>
   <CodAmbienteProc>2</CodAmbienteProc>
-  <DtHrCons>2018-02-13T17:09:51</DtHrCons>
+  <DtHrCons>2018-02-13T21:04:59</DtHrCons>
   <Personagens>
     <Parte>
-      <Tipo>AUTOR</Tipo>
-      <Nome>EDWILSON FRANCISCO ALVES</Nome>
+      <Tipo>APELANTE</Tipo>
+      <Nome>JULIO SERGIO OLIVEIRA SILVA</Nome>
+    </Parte>
+    <Parte>
+      <Tipo>APELANTE</Tipo>
+      <Nome>JHONATHAN REIS ALVARENGA</Nome>
     </Parte>
     <Parte>
       <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ137357 - PATRICIA FIGUEIREDO SIMOES</Nome>
+      <Nome>DP000000 - DEFENSORIA PUBLICA</Nome>
     </Parte>
     <Parte>
-      <Tipo>RÉU</Tipo>
-      <Nome>JUÍZO DE DIREITO DA 2ª VARA DA FAZENDA PÚBLICA DA COMARCA DA CAPITAL</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>RÉU</Tipo>
-      <Nome>JUÍZO DE DIREITO DO 1º JUIZADO ESPECIAL FAZENDÁRIO DA COMARCA DA CAPITAL</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>INTERESSADO</Tipo>
-      <Nome>ESTADO DO RIO DE JANEIRO</Nome>
+      <Tipo>APELADO</Tipo>
+      <Nome>MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</Nome>
     </Parte>
   </Personagens>
   <Assuntos>
     <Assunto>
-      <CodDoc>13241589</CodDoc>
-      <CodAss>10421</CodAss>
-      <Descr>Contratos Administrativos / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</Descr>
-      <DescrAssunto>10421 - Contratos Administrativos / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</DescrAssunto>
+      <CodDoc>13193065</CodDoc>
+      <CodAss>30286</CodAss>
+      <Descr>Porte Ilegal de Arma de Fogo de Uso Permitido / Crimes do Sistema Nacional de Armas / Crimes Previstos na Legislação Extravagante / DIREITO PENAL</Descr>
+      <DescrAssunto>30286 - Porte Ilegal de Arma de Fogo de Uso Permitido / Crimes do Sistema Nacional de Armas / Crimes Previstos na Legislação Extravagante / DIREITO PENAL</DescrAssunto>
       <NumOrd>1</NumOrd>
     </Assunto>
   </Assuntos>
