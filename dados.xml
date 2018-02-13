@@ -1,118 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Processo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
-  <CodCNJ>0018903-25.2016.8.19.0000</CodCNJ>
+  <CodCNJ>0036576-94.2017.8.19.0000</CodCNJ>
   <CodProc />
-  <CodProcLink>2016.004.01216</CodProcLink>
-  <IdProc>118122930</IdProc>
-  <CodDoc>11949850</CodDoc>
-  <DtAutua>2016-04-15T14:25:00</DtAutua>
-  <DescrClasse>MANDADO DE SEGURANCA - CPC</DescrClasse>
-  <DescrAssunto>Sistema Remuneratório e Benefícios / Servidor Público Civil / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</DescrAssunto>
-  <NumProcPrimInst />
+  <CodProcLink>2017.008.02065</CodProcLink>
+  <IdProc>121109623</IdProc>
+  <CodDoc>13241589</CodDoc>
+  <DtAutua>2017-07-07T15:14:00</DtAutua>
+  <DescrClasse>CONFLITO DE COMPETENCIA</DescrClasse>
+  <DescrAssunto>Contratos Administrativos / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</DescrAssunto>
+  <NumProcPrimInst>0414090-81.2016.8.19.0001</NumProcPrimInst>
   <NumProcPrimInstAnt />
-  <NumProcPrimInstLink />
+  <NumProcPrimInstLink>2016.001.360534-7</NumProcPrimInstLink>
   <CodDocAssoc />
   <DescrComarca>RIO DE JANEIRO</DescrComarca>
-  <Vara>TRIBUNAL DE JUSTICA</Vara>
-  <OrgaoJulgador>OE - SECRETARIA DO TRIBUNAL PLENO E ORGAO ESPECIAL</OrgaoJulgador>
-  <Relator>DES. CAMILO RIBEIRO RULIERE</Relator>
+  <Vara>CAPITAL CARTORIO UNICO JUI ESP FAZENDA PUBLICA</Vara>
+  <OrgaoJulgador>VIGÉSIMA SEGUNDA CAMARA CIVEL</OrgaoJulgador>
+  <Relator>DES. CARLOS EDUARDO MOREIRA DA SILVA</Relator>
   <Revisor />
-  <DtHrUltMov>2018-01-31T14:18:00</DtHrUltMov>
-  <DtHrSess>04/12/2017 13:00:00</DtHrSess>
-  <DtHrSessDate>2017-12-04T13:00:00</DtHrSessDate>
-  <NomeAutor>IMPETRANTE</NomeAutor>
-  <NomeReu>IMPETRADO</NomeReu>
-  <Autor>MARIA  ANGELA CAETANO e outro</Autor>
-  <Reu>EXMO SR PRESIDENTE DO TRIBUNAL DE CONTAS DO ESTADO DO RIO DE JANEIRO e outro</Reu>
+  <DtHrUltMov>2017-12-11T14:49:00</DtHrUltMov>
+  <DtHrSess>05/12/2017 11:00:00</DtHrSess>
+  <DtHrSessDate>2017-12-05T11:00:00</DtHrSessDate>
+  <NomeAutor>SUSCTE</NomeAutor>
+  <NomeReu>SUSCDO</NomeReu>
+  <Autor>EDWILSON FRANCISCO ALVES</Autor>
+  <Reu>JUÍZO DE DIREITO DA 2ª VARA DA FAZENDA PÚBLICA DA COMARCA DA CAPITAL e outro</Reu>
   <NomeAdic />
   <ParteAdic />
-  <DescrUltMov>Conclusão ao Relator para Despacho/Decisao </DescrUltMov>
+  <DescrUltMov>Intimação Eletrônica - PROCURADORIA GERAL DO ESTADO DO RJ Ciência </DescrUltMov>
   <Sigiloso>false</Sigiloso>
   <SegredoJustica>false</SegredoJustica>
   <Eletronico>true</Eletronico>
-  <LocalAtualProcesso>GAB. DES CAMILO RIBEIRO RULIERE</LocalAtualProcesso>
+  <LocalAtualProcesso>DGJUR - SECRETARIA DA 22ª CÂMARA CÍVEL</LocalAtualProcesso>
   <Partes>
     <Parte>
       <Tipo>AUTOR</Tipo>
-      <Nome>MARIA  ANGELA CAETANO</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>AUTOR</Tipo>
-      <Nome>NELI DA COSTA MAGALHÃES</Nome>
+      <Nome>EDWILSON FRANCISCO ALVES</Nome>
     </Parte>
     <Parte>
       <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ103197 - EDUARDO MAGALHÃES MENDES DE OLIVEIRA</Nome>
+      <Nome>RJ137357 - PATRICIA FIGUEIREDO SIMOES</Nome>
     </Parte>
     <Parte>
       <Tipo>RÉU</Tipo>
-      <Nome>EXMO SR PRESIDENTE DO TRIBUNAL DE CONTAS DO ESTADO DO RIO DE JANEIRO</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>PROC. DO TRIBUNAL DE CONTAS</Tipo>
-      <Nome>RJ112659 - LEONARDO FIAD</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ112659 - LEONARDO FIAD</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>PROC. DO TRIBUNAL DE CONTAS</Tipo>
-      <Nome>RJ100099 - WILLIAM MACIEL ANDRADE</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ100099 - WILLIAM MACIEL ANDRADE</Nome>
+      <Nome>JUÍZO DE DIREITO DA 2ª VARA DA FAZENDA PÚBLICA DA COMARCA DA CAPITAL</Nome>
     </Parte>
     <Parte>
       <Tipo>RÉU</Tipo>
-      <Nome>ILMO SR REITOR DA UNIVERSIDADE DO ESTADO DO RIO DE JANEIRO</Nome>
+      <Nome>JUÍZO DE DIREITO DO 1º JUIZADO ESPECIAL FAZENDÁRIO DA COMARCA DA CAPITAL</Nome>
     </Parte>
     <Parte>
-      <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ153259 - SHEILA DE LIMA GRYNSZPAN</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>PROC. DO ESTADO</Tipo>
-      <Nome>RJ109690 - INGRID ANDRADE SARMENTO LEAL</Nome>
+      <Tipo>INTERESSADO</Tipo>
+      <Nome>ESTADO DO RIO DE JANEIRO</Nome>
     </Parte>
   </Partes>
   <DadosUltMovimentos>
     <DadosMovimento>
       <Descr>Data do Movimento</Descr>
-      <Valor>31/01/2018 14:18</Valor>
+      <Valor>11/12/2017 14:49</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
-      <Descr>Magistrado</Descr>
-      <Valor>Relator</Valor>
+      <Descr>Destinatário</Descr>
+      <Valor>PROCURADORIA GERAL DO ESTADO DO RJ</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Motivo</Descr>
-      <Valor>Despacho/Decisao</Valor>
-      <Txt />
-    </DadosMovimento>
-    <DadosMovimento>
-      <Descr>Magistrado</Descr>
-      <Valor>DES. CAMILO RIBEIRO RULIERE</Valor>
-      <Txt />
-    </DadosMovimento>
-    <DadosMovimento>
-      <Descr>Órgão Processante</Descr>
-      <Valor>OE - SECRETARIA DO TRIBUNAL PLENO E ÓRGÃO ESPECIAL</Valor>
-      <Txt />
-    </DadosMovimento>
-    <DadosMovimento>
-      <Descr>Destino</Descr>
-      <Valor>GAB. DES CAMILO RIBEIRO RULIERE</Valor>
+      <Valor>Ciência</Valor>
       <Txt />
     </DadosMovimento>
   </DadosUltMovimentos>
   <DadosJulgamento>
     <DadosMovimento>
       <Descr>Data do Movimento</Descr>
-      <Valor>04/12/2017 13:00</Valor>
+      <Valor>05/12/2017 11:00</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
@@ -122,12 +83,12 @@
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Motivo</Descr>
-      <Valor>Não-Provimento</Valor>
+      <Valor>Não-Acolhimento de Embargos de Declaração</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>COMPL.3</Descr>
-      <Valor>Conhecido o Recurso e Não-Provido - Maioria</Valor>
+      <Valor>Embargos de Declaração Não-Acolhidos - Unanimidade</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
@@ -137,17 +98,17 @@
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Motivo</Descr>
-      <Valor>Não-Provimento</Valor>
+      <Valor>Não-Acolhimento de Embargos de Declaração</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>COMPL.3</Descr>
-      <Valor>Conhecido o Recurso e Não-Provido - Maioria</Valor>
+      <Valor>Embargos de Declaração Não-Acolhidos - Unanimidade</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Data da Sessão</Descr>
-      <Valor>04/12/2017 13:00</Valor>
+      <Valor>05/12/2017 11:00</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
@@ -162,170 +123,159 @@
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Presidente</Descr>
-      <Valor>DES. ELISABETE FILIZZOLA  ASSUNÇÃO</Valor>
+      <Valor>DES. ODETE KNAACK DE SOUZA</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Relator</Descr>
-      <Valor>DES. CAMILO RIBEIRO RULIERE</Valor>
+      <Valor>DES. CARLOS EDUARDO MOREIRA DA SILVA</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Designado p/ Acórdão</Descr>
-      <Valor>DES. CAMILO RIBEIRO RULIERE</Valor>
+      <Valor>DES. CARLOS EDUARDO MOREIRA DA SILVA</Valor>
+      <Txt />
+    </DadosMovimento>
+    <DadosMovimento>
+      <Descr>Votação</Descr>
+      <Valor>Por Unanimidade</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Decisão</Descr>
-      <Valor>Conhecido o Recurso e Não-Provido - Maioria</Valor>
+      <Valor>Embargos de Declaração Não-Acolhidos - Unanimidade</Valor>
       <Txt />
     </DadosMovimento>
     <DadosMovimento>
       <Descr>Texto</Descr>
       <Valor />
-      <Txt>Por maioria, negou-se provimento ao Agravo, nos termos do voto do Desembargador Relator, vencido o Desembargador Antonio Carlos Amado.</Txt>
+      <Txt>
+POR UNANIMIDADE, NEGOU-SE PROVIMENTO AOS EMBARGOS DE DECLARAÇÃO, NOS TERMOS DO VOTO DO RELATOR.
+</Txt>
     </DadosMovimento>
   </DadosJulgamento>
   <RecursosInterpostos />
   <PublicacaoAcordao>
-    <DataPublicacao>2018-01-16T00:00:00</DataPublicacao>
-    <NroDiario>2893755</NroDiario>
-    <PagDiario>123</PagDiario>
-    <DataPublicacaoStr>16/01/2018</DataPublicacaoStr>
+    <DataPublicacao>2017-08-18T00:00:00</DataPublicacao>
+    <NroDiario>2788805</NroDiario>
+    <PagDiario>531/552</PagDiario>
+    <DataPublicacaoStr>18/08/2017</DataPublicacaoStr>
   </PublicacaoAcordao>
   <InteiroTeor>
     <InteiroTeor>
-      <DtHrMov>2016-09-08T20:29:00</DtHrMov>
-      <Descr>Decisão  Concessão</Descr>
-      <ArqGED>00041DA855EE4769611A53ECC462367DED4BC505354E4508</ArqGED>
-      <SegrJust>false</SegrJust>
-      <IndAltera>false</IndAltera>
-      <DescrAssoc />
-      <ArqGEDAssoc />
-      <IndAlteraAssoc>true</IndAlteraAssoc>
-      <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>08/09/2016</DtHrMovStr>
-      <DtHrMovAssocStr />
-    </InteiroTeor>
-    <InteiroTeor>
-      <DtHrMov>2017-02-16T18:50:00</DtHrMov>
+      <DtHrMov>2017-07-11T15:38:00</DtHrMov>
       <Descr>Despacho  Mero expediente</Descr>
-      <ArqGED>0004FC5249DF6B89173EED7C0FD48231E413C50608390B54</ArqGED>
+      <ArqGED>0004136B38046B460E33217631F92FDC9996C50645554A19</ArqGED>
       <SegrJust>false</SegrJust>
       <IndAltera>false</IndAltera>
       <DescrAssoc />
       <ArqGEDAssoc />
       <IndAlteraAssoc>true</IndAlteraAssoc>
       <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>16/02/2017</DtHrMovStr>
+      <DtHrMovStr>11/07/2017</DtHrMovStr>
       <DtHrMovAssocStr />
     </InteiroTeor>
     <InteiroTeor>
-      <DtHrMov>2017-07-19T17:22:00</DtHrMov>
-      <Descr>Despacho  Mero expediente</Descr>
-      <ArqGED>00044365704AD4472F6ED1E7F339A77235C7C5064A051B50</ArqGED>
+      <DtHrMov>2017-07-26T17:03:00</DtHrMov>
+      <Descr>Despacho  Peço dia para julgamento</Descr>
+      <ArqGED>0004616BC35883959928B11FE8B8C1E46AE6C5064D1B1D54</ArqGED>
       <SegrJust>false</SegrJust>
       <IndAltera>false</IndAltera>
       <DescrAssoc />
       <ArqGEDAssoc />
       <IndAlteraAssoc>true</IndAlteraAssoc>
       <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>19/07/2017</DtHrMovStr>
+      <DtHrMovStr>26/07/2017</DtHrMovStr>
       <DtHrMovAssocStr />
     </InteiroTeor>
     <InteiroTeor>
-      <DtHrMov>2017-12-05T18:14:00</DtHrMov>
+      <DtHrMov>2017-08-17T10:43:00</DtHrMov>
       <Descr>Acórdão</Descr>
-      <ArqGED>0004F7EDFEBC28972F68FC626BC305FBEAFAC5072E394C30</ArqGED>
+      <ArqGED>000446514D2660A31CF913A5C4B2F6EA2559C5065740324A</ArqGED>
       <SegrJust>false</SegrJust>
       <IndAltera>false</IndAltera>
       <DescrAssoc />
       <ArqGEDAssoc />
       <IndAlteraAssoc>true</IndAlteraAssoc>
       <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>05/12/2017</DtHrMovStr>
+      <DtHrMovStr>17/08/2017</DtHrMovStr>
       <DtHrMovAssocStr />
     </InteiroTeor>
     <InteiroTeor>
-      <DtHrMov>2018-01-12T19:57:00</DtHrMov>
-      <Descr>Voto vencido</Descr>
-      <ArqGED>0004D9B8B71A989798A34BBC84C10556E1A6C5073A343E23</ArqGED>
+      <DtHrMov>2017-09-26T16:58:00</DtHrMov>
+      <Descr>Despacho  Mero expediente</Descr>
+      <ArqGED>0004EEBEDFAB01FEE284BA6D7827626095EFC5070621181A</ArqGED>
       <SegrJust>false</SegrJust>
       <IndAltera>false</IndAltera>
       <DescrAssoc />
       <ArqGEDAssoc />
-      <IndAlteraAssoc>false</IndAlteraAssoc>
+      <IndAlteraAssoc>true</IndAlteraAssoc>
       <DtHrMovAssoc xsi:nil="true" />
-      <DtHrMovStr>12/01/2018</DtHrMovStr>
+      <DtHrMovStr>26/09/2017</DtHrMovStr>
+      <DtHrMovAssocStr />
+    </InteiroTeor>
+    <InteiroTeor>
+      <DtHrMov>2017-11-17T16:34:00</DtHrMov>
+      <Descr>Despacho  Em Mesa</Descr>
+      <ArqGED>0004325475D3E7F01080427CA3FB89B57E14C507210C3939</ArqGED>
+      <SegrJust>false</SegrJust>
+      <IndAltera>false</IndAltera>
+      <DescrAssoc />
+      <ArqGEDAssoc />
+      <IndAlteraAssoc>true</IndAlteraAssoc>
+      <DtHrMovAssoc xsi:nil="true" />
+      <DtHrMovStr>17/11/2017</DtHrMovStr>
+      <DtHrMovAssocStr />
+    </InteiroTeor>
+    <InteiroTeor>
+      <DtHrMov>2017-12-07T16:30:00</DtHrMov>
+      <Descr>Acórdão</Descr>
+      <ArqGED>000487AE5EE7AA2A6BC6B489A5D5B9E32E3AC5072C1A274E</ArqGED>
+      <SegrJust>false</SegrJust>
+      <IndAltera>false</IndAltera>
+      <DescrAssoc />
+      <ArqGEDAssoc />
+      <IndAlteraAssoc>true</IndAlteraAssoc>
+      <DtHrMovAssoc xsi:nil="true" />
+      <DtHrMovStr>07/12/2017</DtHrMovStr>
       <DtHrMovAssocStr />
     </InteiroTeor>
   </InteiroTeor>
   <TemPecas>true</TemPecas>
-  <Origem>2</Origem>
-  <DescrOrigem>TJRJ 2a instância</DescrOrigem>
+  <Origem>8</Origem>
+  <DescrOrigem>Juizados</DescrOrigem>
   <IndArqBaixa>false</IndArqBaixa>
   <CodAmbienteProc>2</CodAmbienteProc>
-  <DtHrCons>2018-02-06T22:52:39</DtHrCons>
+  <DtHrCons>2018-02-13T17:09:51</DtHrCons>
   <Personagens>
     <Parte>
       <Tipo>AUTOR</Tipo>
-      <Nome>MARIA  ANGELA CAETANO</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>AUTOR</Tipo>
-      <Nome>NELI DA COSTA MAGALHÃES</Nome>
+      <Nome>EDWILSON FRANCISCO ALVES</Nome>
     </Parte>
     <Parte>
       <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ103197 - EDUARDO MAGALHÃES MENDES DE OLIVEIRA</Nome>
+      <Nome>RJ137357 - PATRICIA FIGUEIREDO SIMOES</Nome>
     </Parte>
     <Parte>
       <Tipo>RÉU</Tipo>
-      <Nome>EXMO SR PRESIDENTE DO TRIBUNAL DE CONTAS DO ESTADO DO RIO DE JANEIRO</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>PROC. DO TRIBUNAL DE CONTAS</Tipo>
-      <Nome>RJ112659 - LEONARDO FIAD</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ112659 - LEONARDO FIAD</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>PROC. DO TRIBUNAL DE CONTAS</Tipo>
-      <Nome>RJ100099 - WILLIAM MACIEL ANDRADE</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ100099 - WILLIAM MACIEL ANDRADE</Nome>
+      <Nome>JUÍZO DE DIREITO DA 2ª VARA DA FAZENDA PÚBLICA DA COMARCA DA CAPITAL</Nome>
     </Parte>
     <Parte>
       <Tipo>RÉU</Tipo>
-      <Nome>ILMO SR REITOR DA UNIVERSIDADE DO ESTADO DO RIO DE JANEIRO</Nome>
+      <Nome>JUÍZO DE DIREITO DO 1º JUIZADO ESPECIAL FAZENDÁRIO DA COMARCA DA CAPITAL</Nome>
     </Parte>
     <Parte>
-      <Tipo>ADVOGADO</Tipo>
-      <Nome>RJ153259 - SHEILA DE LIMA GRYNSZPAN</Nome>
-    </Parte>
-    <Parte>
-      <Tipo>PROC. DO ESTADO</Tipo>
-      <Nome>RJ109690 - INGRID ANDRADE SARMENTO LEAL</Nome>
+      <Tipo>INTERESSADO</Tipo>
+      <Nome>ESTADO DO RIO DE JANEIRO</Nome>
     </Parte>
   </Personagens>
   <Assuntos>
     <Assunto>
-      <CodDoc>11949850</CodDoc>
-      <CodAss>10288</CodAss>
-      <Descr>Sistema Remuneratório e Benefícios / Servidor Público Civil / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</Descr>
-      <DescrAssunto>10288 - Sistema Remuneratório e Benefícios / Servidor Público Civil / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</DescrAssunto>
+      <CodDoc>13241589</CodDoc>
+      <CodAss>10421</CodAss>
+      <Descr>Contratos Administrativos / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</Descr>
+      <DescrAssunto>10421 - Contratos Administrativos / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</DescrAssunto>
       <NumOrd>1</NumOrd>
-    </Assunto>
-    <Assunto>
-      <CodDoc>11949850</CodDoc>
-      <CodAss>10254</CodAss>
-      <Descr>Aposentadoria / Servidor Público Civil / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</Descr>
-      <DescrAssunto>10254 - Aposentadoria / Servidor Público Civil / DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO</DescrAssunto>
-      <NumOrd>2</NumOrd>
     </Assunto>
   </Assuntos>
   <Audiencias />

@@ -4,6 +4,7 @@
 */
 
 import org.jsoup.Jsoup;
+import org.jsoup.select.Elements;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
@@ -21,95 +22,125 @@ public class Application {
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
 
+
+        org.jsoup.nodes.Document doc = null;
+        org.jsoup.nodes.Document jsoup = null;
+        org.jsoup.nodes.Element id = null;
+        org.jsoup.nodes.Element form = null;
+        org.jsoup.nodes.Element href = null;
+
+        String numeroTJ = null;
+        String numProc = "NumProc";
+        String value = null;
+        String consultaProcesso = null;
+
+        DocumentBuilderFactory dbf = null;
+        DocumentBuilder db = null;
+        Document d = null;
+
+        Element codCNJ = null;
+        Element descrClasse = null;
+        Element orgaoJulgador = null;
+
+        URL url;
+        URL buscaNumeroTJ;
+
+
         // CHAMANDO PELA CLASSE CONSULTA
-        String consultaProcesso = Consulta.info("0018903-25.2016.8.19.0000");
+        consultaProcesso = Consulta.info("0036576-94.2017.8.19.0000");
+
 
         try {
 
             // CHAMA A URL
-            org.jsoup.nodes.Document doc = Jsoup.connect(consultaProcesso).get();
-            org.jsoup.nodes.Element id = doc.getElementById("NumProc");
-            String numeroTJ = id.getElementsByAttribute("value").attr("value");
+            jsoup = Jsoup.connect(consultaProcesso).get();
+
+            // SE ENCONTRAR O ID NUMPROC
+            if (jsoup.toString().contains(numProc)) {
+
+                numeroTJ = jsoup.getElementById(numProc).attr("value");
 
 
-            // GERA O ARQUIVO
-            RecuperaUrlPost.sendPost(id.attr("value"));
+                // GERA O ARQUIVO
+                RecuperaUrlPost.sendPost(numeroTJ);
 
 
-            // LÊ O ARQUIVO
-            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-            DocumentBuilder docBuilder = dbf.newDocumentBuilder();
-            Document d = docBuilder.parse(new File("dados.xml"));
+                // LÊ O ARQUIVO
+                dbf = DocumentBuilderFactory.newInstance();
+                db = dbf.newDocumentBuilder();
+                d = db.parse(new File("dados.xml"));
 
 
-            // LÊ OS ELEMENTOS DESEJADOS
-            Element codCNJ = (Element) d.getElementsByTagName("CodCNJ").item(0);
-            Element descrClasse = (Element) d.getElementsByTagName("DescrClasse").item(0);
-            Element orgaoJulgador = (Element) d.getElementsByTagName("OrgaoJulgador").item(0);
+                // LÊ OS ELEMENTOS DESEJADOS
+                codCNJ = (Element) d.getElementsByTagName("CodCNJ").item(0);
+                descrClasse = (Element) d.getElementsByTagName("DescrClasse").item(0);
+                orgaoJulgador = (Element) d.getElementsByTagName("OrgaoJulgador").item(0);
 
 
-            // IMPRIME NO CONSOLE
-            System.out.println(
-                      "---------------------------------------------------------------------" +
-                    "\n                             Resultado                               " +
-                    "\n                CNJ: " + codCNJ.getTextContent() +
-                    "\n---------------------------------------------------------------------" +
-                    "\nNúmero TJ: " + numeroTJ +
-                    "\nClasse: " + descrClasse.getTextContent() +
-                    "\nÓrgão Julgador: " + orgaoJulgador.getTextContent() +
-                    "\n---------------------------------------------------------------------"
-            );
-        }
+                // IMPRIME NO CONSOLE
+                System.out.println(
+                        "---------------------------------------------------------------------" +
+                                "\n                             Resultado                               " +
+                                "\n                CNJ: " + codCNJ.getTextContent() +
+                                "\n---------------------------------------------------------------------" +
+                                "\nNúmero TJ: " + numeroTJ +
+                                "\nClasse: " + descrClasse.getTextContent() +
+                                "\nÓrgão Julgador: " + orgaoJulgador.getTextContent() +
+                                "\n---------------------------------------------------------------------"
+                );
 
-        catch (Exception e) {
+            } else {
 
-            // CHAMA A URL
-            URL url = new URL(consultaProcesso);
-
-
-            // PESQUISA A URL DESEJADA PELO VALOR DO HREF DA TAG FORM
-            org.jsoup.nodes.Document doc = Jsoup.connect(url.toString()).get();
-            org.jsoup.nodes.Element form = doc.getElementById("form");
-            org.jsoup.nodes.Element href = form.getElementsByAttribute("href").get(1);
-            String value = href.getElementsByAttribute("href").attr("href");
+                // PESQUISA A URL DESEJADA PELO VALOR DO HREF DA TAG FORM
+                //jsoup = Jsoup.connect(consultaProcesso).get();
+                //url = new URL(consultaProcesso);
+                //doc = Jsoup.connect(url.toString()).get();
+                form = jsoup.getElementById("form");
+                href = form.getElementsByAttribute("href").get(1);
+                value = href.getElementsByAttribute("href").attr("href");
 
 
-            // CHAMA A URL
-            URL buscaNumeroTJ = new URL(value);
+                // CHAMA A URL
+                buscaNumeroTJ = new URL(value);
 
 
-            //CONECTA A URL ENCONTRADA - http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N= E ENCONTRA O VALOR DO CNJ
-            org.jsoup.nodes.Document jsoup = Jsoup.connect(buscaNumeroTJ.toString()).get();
-            org.jsoup.nodes.Element id = jsoup.getElementById("NumProc");
-            String numeroTJ = id.getElementsByAttribute("value").attr("value");
+                //CONECTA A URL ENCONTRADA - http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N= E ENCONTRA O VALOR DO CNJ
+                jsoup = Jsoup.connect(buscaNumeroTJ.toString()).get();
+                id = jsoup.getElementById("NumProc");
+                numeroTJ = id.getElementsByAttribute("value").attr("value");
 
 
-            // GERA O ARQUIVO
-            RecuperaUrlPost.sendPost(id.attr("value"));
+                // GERA O ARQUIVO
+                RecuperaUrlPost.sendPost(id.attr("value"));
 
 
-            // LÊ O ARQUIVO
-            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-            DocumentBuilder db = dbf.newDocumentBuilder();
-            Document d = db.parse(new File ("dados.xml"));
+                // LÊ O ARQUIVO
+                dbf = DocumentBuilderFactory.newInstance();
+                db = dbf.newDocumentBuilder();
+                d = db.parse(new File("dados.xml"));
 
 
-            // LÊ OS ELEMENTOS DESEJADOS
-            Element codCNJ = (Element) d.getElementsByTagName("CodCNJ").item(0);
-            Element descrClasse = (Element) d.getElementsByTagName("DescrClasse").item(0);
-            Element orgaoJulgador = (Element) d.getElementsByTagName("OrgaoJulgador").item(0);
+                // LÊ OS ELEMENTOS DESEJADOS
+                codCNJ = (Element) d.getElementsByTagName("CodCNJ").item(0);
+                descrClasse = (Element) d.getElementsByTagName("DescrClasse").item(0);
+                orgaoJulgador = (Element) d.getElementsByTagName("OrgaoJulgador").item(0);
 
 
-            // IMPRIME NO CONSOLE
-            System.out.println(
-                    "-----------------------------------------------------------------------" +
-                    "\n                              Resultado                              " +
-                    "\n                CNJ: " + codCNJ.getTextContent() +
-                    "\n---------------------------------------------------------------------" +
-                    "\nNúmero TJ: " + numeroTJ  +
-                    "\nClasse: " + descrClasse.getTextContent() +
-                    "\nÓrgão Julgador: " + orgaoJulgador.getTextContent()
-            );
+                // IMPRIME NO CONSOLE
+                System.out.println(
+                        "-----------------------------------------------------------------------" +
+                                "\n                              Resultado                              " +
+                                "\n                CNJ: " + codCNJ.getTextContent() +
+                                "\n---------------------------------------------------------------------" +
+                                "\nNúmero TJ: " + numeroTJ +
+                                "\nClasse: " + descrClasse.getTextContent() +
+                                "\nÓrgão Julgador: " + orgaoJulgador.getTextContent()
+                );
+            }
+
+        } catch (Exception e) {
+            System.out.println("Erro");
+
         }
     }
-}
+    }

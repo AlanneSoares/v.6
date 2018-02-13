@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jsoup-1.11.2" level="project" />
     <orderEntry type="library" name="jsoup-1.11.2-sources" level="project" />
+    <orderEntry type="library" name="src1" level="application" />
   </component>
 </module>
